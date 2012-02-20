@@ -18,6 +18,7 @@ end
 
 gem 'jquery-rails'
 
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -29,5 +30,5 @@ gem 'jquery-rails'
 
 group :test do
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', '0.8.2', :require => false
 end
