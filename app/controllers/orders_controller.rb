@@ -1,5 +1,8 @@
 class OrdersController < ApplicationController  
-	def create
+  def index
+    @orders = Order.all
+  end
+  def create
 
     @order = Order.new(params[:order])
 
@@ -38,5 +41,8 @@ class OrdersController < ApplicationController
       end
 
     end
+  end
+  def new 
+    @order = Order.new
   end
 end
